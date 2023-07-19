@@ -105,6 +105,8 @@ h6 {
 body {
   font-family: "Pobeda";
   font-weight: 400;
+  background-color: #fff;
+  height: 100vh;
 }
 body h1,
 body h2,
@@ -112,4 +114,117 @@ body h3,
 body h4,
 body .cost__service {
   font-weight: 700;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header,
+.main,
+.footer {
+  padding: 20px 0 30px 0;
+}
+
+.header__info,
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+.logo img {
+  width: 100%;
+}
+
+.address,
+.footer__address {
+  font-weight: 700;
+}
+.address p,
+.footer__address p {
+  max-width: 220px;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.contacts *,
+.footer__contacts * {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+}
+.main__info p,
+.main__info li {
+  font-size: 19px;
+  max-width: 500px;
+  line-height: 1.37;
+  margin: 20px 0 20px 0;
+}
+.main__info p {
+  max-width: 800px;
+}
+.main__info h2 {
+  font-size: 30px;
+}
+.main__info h3 {
+  font-size: 22px;
+}
+
+.info__outsourcing h1 {
+  font-size: 35px;
+}
+.info__outsourcing p,
+.info__outsourcing li {
+  word-break: break-word;
+  text-wrap: balance;
+}
+
+.costOfServices {
+  margin-bottom: 20px;
+}
+
+.price__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.price__services {
+  flex: 0 1 235px;
+  border: 1px solid #000;
+}
+.price__services h3 {
+  text-align: center;
+  margin: 7px 0 0 0;
+}
+.price__services p {
+  text-align: center;
+  border-top: 1px solid #000;
+  margin: 7px 0 0 0;
+  word-break: break-word;
+  text-wrap: balance;
+}
+.price__services .cost__service {
+  font-size: 24px;
+}
+
+.courier h2 {
+  max-width: 800px;
 }
