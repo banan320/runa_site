@@ -1,0 +1,16 @@
+// обнуляющие стили
+@import "_reset";
+
+@import "_fonts";
+
+body {
+  font-family: "Pobeda";
+  font-weight: 400;
+  h1,
+  h2,
+  h3,
+  h4,
+  .cost__service {
+    font-weight: 700;
+  }
+}
