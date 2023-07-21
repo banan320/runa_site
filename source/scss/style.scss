@@ -99,7 +99,14 @@ body {
 }
 .info__whyOutsourcing {
 }
-
+.swiper {
+  width: 700px;
+  height: 230px;
+  .swiper-slide,
+  .swiper-slide-next {
+    padding: 10px;
+  }
+}
 .costOfServices {
   margin-bottom: 20px;
 }
@@ -137,6 +144,15 @@ body {
 .footer {
 }
 .footer__info {
+}
+.footer__companyCard {
+  p {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 .footer__contacts {
 }
