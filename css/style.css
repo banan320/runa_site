@@ -192,6 +192,15 @@ body .cost__service {
   text-wrap: balance;
 }
 
+.swiper {
+  width: 700px;
+  height: 230px;
+}
+.swiper .swiper-slide,
+.swiper .swiper-slide-next {
+  padding: 10px;
+}
+
 .costOfServices {
   margin-bottom: 20px;
 }
@@ -224,4 +233,12 @@ body .cost__service {
 
 .courier h2 {
   max-width: 800px;
+}
+
+.footer__companyCard p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.footer__companyCard p:last-child {
+  margin-bottom: 0;
 }
