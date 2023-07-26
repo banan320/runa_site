@@ -112,13 +112,21 @@ body {
 }
 .price__block {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
+.price__item {
+  // flex: 0 1 470px;
+  max-width: 450px;
+  &:first-child {
+    margin-right: 20px;
+  }
+}
 .price__services {
-  flex: 0 1 235px;
   border: 1px solid #000;
+  margin-bottom: 20px;
+
   h3 {
     text-align: center;
     margin: 7px 0 0 0;
@@ -130,6 +138,7 @@ body {
     margin: 7px 0 0 0;
     word-break: break-word;
     text-wrap: balance;
+    padding: 5px;
   }
   .cost__service {
     font-size: 24px;
