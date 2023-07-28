@@ -186,8 +186,7 @@ body .cost__service {
 
 .section__title {
   position: relative;
-  min-width: 200px;
-  width: 760px;
+  max-width: 760px;
 }
 .section__title h1 {
   letter-spacing: 5px;
