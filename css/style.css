@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* =============== Обнуление стилей ============== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -84,23 +85,9 @@ h6 {
 }
 
 /* =============== Конец бнуления стилей ============== */
-@font-face {
-  font-family: "Pobeda";
-  src: url("/source/fonts/Pobeda-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "Pobeda";
-  src: url("/source/fonts/Pobeda-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
 body {
-  font-family: "Pobeda";
-  font-weight: 700;
+  font-family: "Roboto";
+  font-weight: 400;
   background-color: #f3f3f3;
   height: 100vh;
 }
@@ -151,19 +138,21 @@ body .cost__service {
 
 .address,
 .footer__address {
-  font-weight: 700;
+  font-weight: 400;
 }
 .address p,
 .footer__address p {
   max-width: 220px;
   line-height: 20px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .contacts *,
 .footer__contacts * {
-  line-height: 20px;
-  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 17px;
 }
 
 .main__info {
@@ -172,19 +161,19 @@ body .cost__service {
 }
 .main__info p,
 .main__info li {
-  font-size: 19px;
+  font-size: 18px;
   max-width: 500px;
   line-height: 1.37;
   margin: 20px 0 20px 0;
 }
 .main__info p {
-  max-width: 800px;
+  max-width: 520px;
 }
 .main__info h2 {
   font-size: 30px;
 }
 .main__info h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .info__bg {
@@ -192,17 +181,16 @@ body .cost__service {
   padding: 200px 0;
   position: relative;
   opacity: 1;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .section__title {
   position: relative;
   min-width: 200px;
-  width: 600px;
+  width: 760px;
 }
 .section__title h1 {
   letter-spacing: 5px;
-  line-height: 1.1;
   font-size: 60px;
   margin-bottom: 20px;
 }
@@ -210,10 +198,11 @@ body .cost__service {
 .section__title p {
   text-align: center;
   color: #fff;
+  font-weight: 400;
 }
 .section__title p {
   letter-spacing: 2px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .back__dark {
@@ -226,10 +215,31 @@ body .cost__service {
   position: absolute;
 }
 
+.info__outsourcing {
+  margin-bottom: 30px;
+}
 .info__outsourcing p,
 .info__outsourcing li {
   word-break: break-word;
   text-wrap: balance;
+}
+
+.outsourcing__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.outsourcing__item {
+  margin-right: 10px;
+}
+
+.title__img {
+  max-width: 560px;
+}
+.title__img img {
+  width: 100%;
 }
 
 .swiper {
@@ -241,8 +251,15 @@ body .cost__service {
   padding: 15px;
 }
 
+.contract__cost {
+  margin-bottom: 30px;
+}
+
 .info__costOfServices {
   margin-bottom: 20px;
+}
+.info__costOfServices p {
+  margin-bottom: 50px;
 }
 
 .price__block {
@@ -261,7 +278,7 @@ body .cost__service {
 
 .price__services {
   border: 1px solid #000;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .price__services h3 {
   text-align: center;
@@ -275,18 +292,35 @@ body .cost__service {
   text-wrap: balance;
   padding: 5px;
 }
+.price__services span {
+  font-weight: 700;
+}
 .price__services .cost__service {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .courier h2 {
   max-width: 800px;
 }
 
+.footer {
+  border-top: 1px solid #b3b3b3;
+  background-color: #eaeaea;
+}
+
 .footer__companyCard p {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .footer__companyCard p:last-child {
   margin-bottom: 0;
+}
+
+.footer__address p {
+  margin-bottom: 10px;
+}
+.footer__address a {
+  font-weight: 300;
+  line-height: 21px;
+  color: #000;
 }
