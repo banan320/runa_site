@@ -23,3 +23,22 @@ const swiper = new Swiper(".swiper", {
     disableOnInteraction: false,
   },
 });
+
+// scroll ==================
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("scroll__show");
+    }
+  });
+}
+
+let options = {
+  threshold: [0.2],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".scroll");
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
