@@ -142,7 +142,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .outsourcing__item {
@@ -164,8 +163,6 @@ body {
   }
 }
 
-.info__whyOutsourcing {
-}
 .swiper {
   max-width: 700px;
   min-height: 230px;
@@ -208,7 +205,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 .price__item {
   max-width: 450px;
@@ -252,8 +248,7 @@ body {
   border-top: 1px solid #b3b3b3;
   background-color: #eaeaea;
 }
-.footer__info {
-}
+
 .footer__companyCard {
   p {
     margin-bottom: 8px;
@@ -263,8 +258,7 @@ body {
     margin-bottom: 0;
   }
 }
-.footer__contacts {
-}
+
 .footer__address {
   p {
     margin-bottom: 10px;
@@ -290,8 +284,17 @@ body {
 
 // response ==============
 @media (max-width: 1024px) {
+  .main__info {
+    h2 {
+      text-align: center;
+    }
+  }
   .info__outsourcing {
     margin-bottom: 50px;
+  }
+  .outsourcing__item {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .outsourcing__title {
     flex-direction: column;
@@ -299,7 +302,182 @@ body {
   .info__outsourcing {
     p,
     li {
-      max-width: 550px;
+      max-width: 560px;
+    }
+  }
+  .courier {
+    h2 {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .section__title {
+    h1 {
+      font-size: 45px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .price__block {
+    flex-direction: column;
+  }
+  .price__item {
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+  .address {
+    p {
+      max-width: 140px;
+    }
+  }
+  .main__info {
+    h2 {
+      font-size: 27px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+  }
+  .info__outsourcing {
+    p,
+    li {
+      max-width: 480px;
+    }
+  }
+  .title__img {
+    max-width: 480px;
+  }
+  .price__services {
+    .cost__service {
+      font-size: 20px;
+    }
+  }
+  .swiper {
+    min-height: 190px;
+  }
+  .outsourcing__item {
+    p,
+    li {
+      margin: 15px 0 15px 0;
+    }
+  }
+  .contract__cost {
+    p {
+      word-break: break-word;
+      text-wrap: balance;
+    }
+  }
+  .footer__companyCard {
+    p {
+      font-size: 12px;
+    }
+  }
+  .contacts,
+  .footer__contacts {
+    * {
+      font-size: 14px;
+    }
+  }
+  .address,
+  .footer__address {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .section__title {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .footer__companyCard,
+  .footer__contacts {
+    margin: 0 10px 12px 0;
+  }
+  .footer__address {
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo,
+  .address {
+    margin: 0 10px 12px 0;
+  }
+  .main__info {
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .swiper {
+    min-height: 100%;
+    margin-bottom: 15px;
+  }
+  .section__title {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 380px) {
+  .header__info {
+    flex-direction: column;
+  }
+  .logo,
+  .address {
+    margin-right: 0;
+  }
+  .section__title {
+    h1 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .info__bg {
+    padding: 160px 0;
+  }
+  .price__services {
+    .cost__service {
+      font-size: 18px;
+    }
+  }
+  .main__info {
+    h3 {
+      font-size: 18px;
     }
   }
 }

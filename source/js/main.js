@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 100,
   loop: true,
   speed: 800,
-  // autoHeight: true,
+  autoHeight: true,
   direction: "horizontal",
   effect: "coverflow",
   coverflowEffect: {
