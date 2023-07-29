@@ -127,6 +127,7 @@ body .cost__service {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -142,7 +143,7 @@ body .cost__service {
 }
 .address p,
 .footer__address p {
-  max-width: 220px;
+  max-width: 170px;
   line-height: 20px;
   font-size: 17px;
 }
@@ -155,6 +156,10 @@ body .cost__service {
   font-size: 17px;
 }
 
+.whatsApp {
+  color: #5da9a2;
+}
+
 .main__info {
   display: flex;
   flex-direction: column;
@@ -162,15 +167,11 @@ body .cost__service {
 .main__info p,
 .main__info li {
   font-size: 18px;
-  max-width: 500px;
   line-height: 1.37;
-  margin: 20px 0 20px 0;
-}
-.main__info p {
-  max-width: 520px;
 }
 .main__info h2 {
   font-size: 30px;
+  margin-bottom: 30px;
 }
 .main__info h3 {
   font-size: 22px;
@@ -233,6 +234,14 @@ body .cost__service {
 .outsourcing__item {
   margin-right: 10px;
 }
+.outsourcing__item p,
+.outsourcing__item li {
+  margin: 20px 0 20px 0;
+  max-width: 470px;
+}
+.outsourcing__item p {
+  margin-top: 0;
+}
 
 .title__img {
   max-width: 560px;
@@ -245,13 +254,16 @@ body .cost__service {
   max-width: 700px;
   min-height: 230px;
 }
+.swiper p {
+  max-width: 700px;
+}
 .swiper .swiper-slide,
 .swiper .swiper-slide-next {
   padding: 15px;
 }
 
 .contract__cost {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .info__costOfServices {
@@ -259,6 +271,23 @@ body .cost__service {
 }
 .info__costOfServices p {
   margin-bottom: 50px;
+}
+
+.info__costOfServices p,
+.courier__scan p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 570px;
+}
+
+.costOfServices__parag {
+  margin-bottom: 50px;
+}
+
+.contract__cost p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 490px;
 }
 
 .price__block {
@@ -298,6 +327,10 @@ body .cost__service {
   font-size: 22px;
 }
 
+.courier__scan {
+  margin-bottom: 20px;
+}
+
 .courier h2 {
   max-width: 800px;
 }
@@ -319,7 +352,31 @@ body .cost__service {
   margin-bottom: 10px;
 }
 .footer__address a {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 21px;
   color: #000;
+}
+
+.scroll {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.scroll.scroll__show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+@media (max-width: 1024px) {
+  .info__outsourcing {
+    margin-bottom: 50px;
+  }
+  .outsourcing__title {
+    flex-direction: column;
+  }
+  .info__outsourcing p,
+  .info__outsourcing li {
+    max-width: 550px;
+  }
 }
