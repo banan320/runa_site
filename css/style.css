@@ -357,7 +357,7 @@ body .cost__service {
 
 .scroll {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
 }
 
 .scroll.scroll__show {
